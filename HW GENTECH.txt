@@ -1,0 +1,50 @@
+1
+регистрация аккаунта Create
+покупка Premium YT   Update
+поиск видео Read
+просмотр видео Read
+Добавить видео в плейлист Create
+Удалить видео с плейлиста Delete
+Скачать видео Create
+Блокирование аккаунта Update
+Удаление аккаунта Delete
+Изменение настроек аккаунта Update
+
+
+2 
+SELECT 
+ProductName,
+Price
+FROM Products
+WHERE 
+Price >= 20
+AND
+Price <= 150
+3 
+SELECT Country
+FROM Suppliers
+WHERE 
+NOT Country='USA'
+4
+SELECT *
+FROM Shippers
+WHERE 
+ShipperID = 1
+5
+SELECT ContactName
+FROM Customers
+WHERE
+NOT Country = 'France'
+AND
+NOT Country = 'USA'
+6
+SELECT 
+Country,
+City,
+Address
+
+FROM Suppliers
+WHERE
+NOT Country='Japan'
+AND
+NOT Country='Brazil'
